@@ -44,11 +44,11 @@ resource "github_introduction" "joey" {
 ```
 
 ### Latest BlueSky Posts
+2025-09-27: [Moved all my stuff to a homelab cluster lets see how that goes ](https://bsky.app/profile/apollorion.com/post/3lztoegt24225)  
 2025-09-15: [The new iOS reminds me of the first time I learned how to make a div with a blurry background. ](https://bsky.app/profile/apollorion.com/post/3lyvyxraud22t)  
 2025-09-08: [My wife and I started a fish wall, this is fish art from columbus, seattle, and myrtle beach so far. ](https://bsky.app/profile/apollorion.com/post/3lydrmnoxwk2b)  
 2025-09-01: [You forgot the pickles!!! ](https://bsky.app/profile/apollorion.com/post/3lxqnr5dkzs2z)  
 2025-08-28: [the good news about running into a bear with rabies is you probably dont need to worry about contracting rabies. ](https://bsky.app/profile/apollorion.com/post/3lxgcelevcs2x)  
-2025-08-26: [Sleep is a way to time travel to breakfast ](https://bsky.app/profile/apollorion.com/post/3lxck5jbrr22b)  
 
 
 <p align="center">
