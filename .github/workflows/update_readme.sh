@@ -2,7 +2,7 @@
 
 gen_top(){
   cat <<EOF > README.md
-![Personal Website](https://raw.githubusercontent.com/Apollorion/apollorion/main/logos/new-large-white-transparent.png#gh-dark-mode-only)![Personal Website](https://raw.githubusercontent.com/Apollorion/apollorion/main/logos/new-large-black-transparent.png#gh-light-mode-only)
+![Personal Website](https://raw.githubusercontent.com/TheOutdoorProgrammer/TheOutdoorProgrammer/main/logos/new-large-white-transparent.png#gh-dark-mode-only)![Personal Website](https://raw.githubusercontent.com/TheOutdoorProgrammer/TheOutdoorProgrammer/main/logos/new-large-black-transparent.png#gh-light-mode-only)
 
 <p align="center">
     <b>Hello, I'm Joey 👋</b>
@@ -17,7 +17,7 @@ gen_blusky_posts(){
 
   # Query bluesky for posts
   export MAX_POSTS=5
-  posts=$(curl -sS -H "Accept: application/json" "https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=apollorion.com&limit=$MAX_POSTS")
+  posts=$(curl -sS -H "Accept: application/json" "https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=theoutdoorprogrammer.com&limit=$MAX_POSTS")
 
   length=$(echo "$posts" | jq ".feed | length")
 
@@ -35,7 +35,7 @@ gen_blusky_posts(){
         continue
       fi
 
-      if [ "$handle" != "apollorion.com" ]; then
+      if [ "$handle" != "theoutdoorprogrammer.com" ]; then
         text="Repost(@$handle): $text"
       fi
 
@@ -47,14 +47,16 @@ gen_blusky_posts(){
 
 gen_opentofu_resource(){
 
-  links=$(curl -sS https://raw.githubusercontent.com/Apollorion/profile/refs/heads/main/_data/links.yml)
+  links=$(curl -sS https://raw.githubusercontent.com/TheOutdoorProgrammer/profile/refs/heads/main/_data/links.yml)
 
   cat <<EOF >> README.md
 \`\`\`hcl
 resource "github_introduction" "joey" {
     name      = "Joey Stout"
     interests = ["kubernetes", "opentofu", "nodejs", "python", "gitops"]
-    resume    = "https://apollorion.com/joeysResume.pdf"
+
+    \# TODO: Make a resume
+    \# resume    = "https://www.theoutdoorprogrammer.com/joeysResume.pdf"
 
 EOF
 
@@ -88,7 +90,7 @@ gen_bottom(){
   cat <<EOF >> README.md
 
 <p align="center">
-    <a href="https://www.buymeacoffee.com/apollorion"><sub><sub>Buy Me A Coffee</sub></sub></a> <sub><sub>|</sub></sub> <a href="https://apollorion.com/joeysResume.pdf"><sub><sub>Resume</sub></sub></a>
+    <a href="https://www.buymeacoffee.com/apollorion"><sub><sub>Buy Me A Coffee</sub></sub></a>
 </p>
 EOF
 }
