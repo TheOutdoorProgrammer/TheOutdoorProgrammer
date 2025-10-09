@@ -55,8 +55,8 @@ resource "github_introduction" "joey" {
     name      = "Joey Stout"
     interests = ["kubernetes", "opentofu", "nodejs", "python", "gitops"]
 
-    \# TODO: Make a resume
-    \# resume    = "https://www.theoutdoorprogrammer.com/joeysResume.pdf"
+    # TODO: Make a resume
+    # resume    = "https://www.theoutdoorprogrammer.com/joeysResume.pdf"
 
 EOF
 
