@@ -1,4 +1,4 @@
-![Personal Website](https://raw.githubusercontent.com/TheOutdoorProgrammer/TheOutdoorProgrammer/main/logos/new-large-white-transparent.png#gh-dark-mode-only)![Personal Website](https://raw.githubusercontent.com/TheOutdoorProgrammer/TheOutdoorProgrammer/main/logos/new-large-black-transparent.png#gh-light-mode-only)
+![Personal Website](https://raw.githubusercontent.com/TheOutdoorProgrammer/TheOutdoorProgrammer/main/logos/theoutdoorprogrammer/the-outdoor-programmer-logo-hq.png)
 
 <p align="center">
     <b>Hello, I'm Joey 👋</b>
