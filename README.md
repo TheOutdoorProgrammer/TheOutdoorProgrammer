@@ -46,11 +46,11 @@ resource "github_introduction" "joey" {
 ```
 
 ### Latest BlueSky Posts
+2026-02-07: [I want to put more thoughts here. I originally started using bluesky because my friends told me I have the strangest thoughts and when I have one I want to share it. So Im going to try it again. ](https://bsky.app/profile/theoutdoorprogrammer.com/post/3mea76ddl4k2n)  
 2025-12-24: [Hey all you people Hey all you people Hey all you people won't you listen to me I just had a sandwich No ordinary sandwich ](https://bsky.app/profile/theoutdoorprogrammer.com/post/3mapz752ees23)  
 2025-12-13: [Im not big into Joe Rogan Experience, but I watched the Jelly Roll episode last night and it was very inspiring. ](https://bsky.app/profile/theoutdoorprogrammer.com/post/3m7v6x5kmds2v)  
 2025-10-14: [I made my first youtube short, if you are a hunter or a programmer nerd like me check it out youtube.com/shorts/6m5rr... ](https://bsky.app/profile/theoutdoorprogrammer.com/post/3m34q3jf2bk24)  
 2025-10-13: [I changed my online handle from apollorion to TheOutdoorProgrammer recently. The username served me well for many years but had a few fallbacks that i hope my own personal "rebrand" will fix. ](https://bsky.app/profile/theoutdoorprogrammer.com/post/3m32u3mw3vc2d)  
-2025-09-27: [Moved all my stuff to a homelab cluster lets see how that goes ](https://bsky.app/profile/theoutdoorprogrammer.com/post/3lztoegt24225)  
 
 
 <p align="center">
