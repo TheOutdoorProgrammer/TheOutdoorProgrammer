@@ -46,11 +46,11 @@ resource "github_introduction" "joey" {
 ```
 
 ### Latest BlueSky Posts
+2026-02-10: [As a dad, I have to say I love my kids. But Im so excited for the day I never have to see feces of another human ever again. ](https://bsky.app/profile/theoutdoorprogrammer.com/post/3mehvkwn3xs2m)  
 2026-02-09: [github.com/TheOutdoorPr... ](https://bsky.app/profile/theoutdoorprogrammer.com/post/3megxliv7422y)  
 2026-02-07: [Hopefully going ice fishing today for the first time. Should be a good time. ](https://bsky.app/profile/theoutdoorprogrammer.com/post/3mebhes6uk22r)  
 2026-02-07: [I want to put more thoughts here. I originally started using bluesky because my friends told me I have the strangest thoughts and when I have one I want to share it. So Im going to try it again. ](https://bsky.app/profile/theoutdoorprogrammer.com/post/3mea76ddl4k2n)  
 2025-12-24: [Hey all you people Hey all you people Hey all you people won't you listen to me I just had a sandwich No ordinary sandwich ](https://bsky.app/profile/theoutdoorprogrammer.com/post/3mapz752ees23)  
-2025-12-13: [Im not big into Joe Rogan Experience, but I watched the Jelly Roll episode last night and it was very inspiring. ](https://bsky.app/profile/theoutdoorprogrammer.com/post/3m7v6x5kmds2v)  
 
 
 <p align="center">
