@@ -26,15 +26,21 @@ resource "github_introduction" "joey" {
         "https://situationroom.apollorion.com/",
         "https://github.com/TheOutdoorProgrammer/fly",
         "https://github.com/TheOutdoorProgrammer/MAAS2",
+        "https://fishid.theoutdoorprogrammer.com",
+        "https://littlelizards.live",
+        "https://crestwaterbay.com/",
+        "https://github.com/TheOutdoorProgrammer/external-dns-firewalla-webhook",
+        "https://github.com/TheOutdoorProgrammer/githubcommits2profile",
+        "https://binhub.dev",
+        "https://github.com/TheOutdoorProgrammer/huntercalgen",
+        "https://github.com/TheOutdoorProgrammer/tf2tofu",
+        "https://github.com/TheOutdoorProgrammer/bankmap",
     ]
 
     spacelift = [
         "https://packetpushers.net/podcasts/day-two-devops/0423-d2do270-spacelift-is-your-infrastructure-glue-sponsored/",
         "https://github.com/TheOutdoorProgrammer/MRPICKLE",
         "https://github.com/spacelift-solutions/tofusible",
-        "https://github.com/spacelift-solutions/plugin-sops",
-        "https://github.com/spacelift-solutions/plugin-context-trigger",
-        "https://github.com/spacelift-solutions/plugin-signed-runs",
     ]
 
     blog_posts = [
@@ -46,11 +52,11 @@ resource "github_introduction" "joey" {
 ```
 
 ### Latest BlueSky Posts
+2026-02-15: [Antivaxxers: Vaccines cause autism and have drugs that can harm you!  Also Antivaxxers: GLP-1s are the exception because they help you LOSE WEIGHT ](https://bsky.app/profile/theoutdoorprogrammer.com/post/3mevvmmbdqk2b)  
 2026-02-15: [Mark Robers cameo in Michael Reeves latest video was 10/10 😂   Rober: "You're not putting anything biological in it are you?" Reeves: "F*** s*** f***" ](https://bsky.app/profile/theoutdoorprogrammer.com/post/3mevingkt722e)  
 2026-02-10: [As a dad, I have to say I love my kids. But Im so excited for the day I never have to see feces of another human ever again. ](https://bsky.app/profile/theoutdoorprogrammer.com/post/3mehvkwn3xs2m)  
 2026-02-09: [github.com/TheOutdoorPr... ](https://bsky.app/profile/theoutdoorprogrammer.com/post/3megxliv7422y)  
 2026-02-07: [Hopefully going ice fishing today for the first time. Should be a good time. ](https://bsky.app/profile/theoutdoorprogrammer.com/post/3mebhes6uk22r)  
-2026-02-07: [I want to put more thoughts here. I originally started using bluesky because my friends told me I have the strangest thoughts and when I have one I want to share it. So Im going to try it again. ](https://bsky.app/profile/theoutdoorprogrammer.com/post/3mea76ddl4k2n)  
 
 
 <p align="center">
