@@ -52,11 +52,11 @@ resource "github_introduction" "joey" {
 ```
 
 ### Latest BlueSky Posts
+2026-02-17: [AI might steal my job one day but my god is AI impressive. ](https://bsky.app/profile/theoutdoorprogrammer.com/post/3mezsou4ymc26)  
 2026-02-15: [Antivaxxers: Vaccines cause autism and have drugs that can harm you!  Also Antivaxxers: GLP-1s are the exception because they help you LOSE WEIGHT ](https://bsky.app/profile/theoutdoorprogrammer.com/post/3mevvmmbdqk2b)  
 2026-02-15: [Mark Robers cameo in Michael Reeves latest video was 10/10 😂   Rober: "You're not putting anything biological in it are you?" Reeves: "F*** s*** f***" ](https://bsky.app/profile/theoutdoorprogrammer.com/post/3mevingkt722e)  
 2026-02-10: [As a dad, I have to say I love my kids. But Im so excited for the day I never have to see feces of another human ever again. ](https://bsky.app/profile/theoutdoorprogrammer.com/post/3mehvkwn3xs2m)  
 2026-02-09: [github.com/TheOutdoorPr... ](https://bsky.app/profile/theoutdoorprogrammer.com/post/3megxliv7422y)  
-2026-02-07: [Hopefully going ice fishing today for the first time. Should be a good time. ](https://bsky.app/profile/theoutdoorprogrammer.com/post/3mebhes6uk22r)  
 
 
 <p align="center">
