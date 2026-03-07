@@ -52,11 +52,11 @@ resource "github_introduction" "joey" {
 ```
 
 ### Latest BlueSky Posts
+2026-03-07: [ ](https://bsky.app/profile/theoutdoorprogrammer.com/post/3mgi4slpzc22t)  
 2026-02-24: [Does even small amounts of debris in the bathtub absolutely gross everyone else out too? Like I could see a single hair and I could not get in that tub until its cleaned. ](https://bsky.app/profile/theoutdoorprogrammer.com/post/3mfndaxnww22f)  
 2026-02-24: [Im starting a small online community for people who work in tech and also love the outdoors. We talk about fishing, hunting, gear, and just as much about software, devops, IT, hardware, home labs, and whatever else. If that sounds like your thing, check it out and apply at nerdswhofish.org ](https://bsky.app/profile/theoutdoorprogrammer.com/post/3mfkwyx4gh22j)  
 2026-02-17: [Elon emailing epstein and saying, and I quote, "Girls FTW" is imprinted on my brain in a way that I will never be able to forget it. ](https://bsky.app/profile/theoutdoorprogrammer.com/post/3mezszxgyhc2u)  
 2026-02-17: [AI might steal my job one day but my god is AI impressive. ](https://bsky.app/profile/theoutdoorprogrammer.com/post/3mezsou4ymc26)  
-2026-02-15: [Antivaxxers: Vaccines cause autism and have drugs that can harm you!  Also Antivaxxers: GLP-1s are the exception because they help you LOSE WEIGHT ](https://bsky.app/profile/theoutdoorprogrammer.com/post/3mevvmmbdqk2b)  
 
 
 <p align="center">
