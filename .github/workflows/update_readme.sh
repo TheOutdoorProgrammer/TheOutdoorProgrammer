@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 LINKS=$(curl -sS https://raw.githubusercontent.com/TheOutdoorProgrammer/profile/refs/heads/main/_data/links.yml)
+SOCIAL=$(curl -sS https://raw.githubusercontent.com/TheOutdoorProgrammer/profile/refs/heads/main/_data/social.yml)
 
 shield_logo_for(){
   case "$1" in
@@ -69,6 +70,17 @@ EOF
       echo "  <a href=\"${url}\"><img src=\"https://img.shields.io/badge/${label}-${color}?style=for-the-badge&logo=${logo}&logoColor=282a36\" /></a>" >> README.md
     done
     break
+  done
+
+  length_of_social=$(echo "$SOCIAL" | yq '. | length')
+  for s in $(seq 0 $((length_of_social - 1))); do
+    title=$(echo "$SOCIAL" | yq -r ".[$s].name")
+    url=$(echo "$SOCIAL" | yq -r ".[$s].url")
+    icon=$(echo "$SOCIAL" | yq -r ".[$s].icon")
+    color=$(shield_color_for "$title")
+    label=$(echo "$title" | sed 's/ /_/g')
+    logo=$(iconify_to_base64_logo "$icon")
+    echo "  <a href=\"${url}\"><img src=\"https://img.shields.io/badge/${label}-${color}?style=for-the-badge&logo=${logo}&logoColor=282a36\" /></a>" >> README.md
   done
 
   echo '</p>' >> README.md
