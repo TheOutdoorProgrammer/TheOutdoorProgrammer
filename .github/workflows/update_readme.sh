@@ -23,7 +23,7 @@ gen_blusky_posts(){
 
   # Parse the posts
   for i in $(seq 0 $((length - 1))); do
-      text=$(echo "$posts" | jq -r ".feed[$i].post.record.text" | tr '\n' ' ')
+      text=$(echo "$posts" | jq -r ".feed[$i].post.record.text" | tr '\n' ' ' | xargs)
       uri=$(echo "$posts" | jq -r ".feed[$i].post.uri" | awk -F'/' '{print $NF}')
 
       date=$(echo "$posts" | jq -r ".feed[$i].post.record.createdAt")
