@@ -181,6 +181,31 @@ iconify_img(){
   fi
 }
 
+append_site_post_rows(){
+  post_files=$(curl -sS "https://api.github.com/repos/TheOutdoorProgrammer/profile/contents/_posts" | jq -r '.[].name' | sort -r | head -5)
+
+  for file in $post_files; do
+    date_part=$(echo "$file" | cut -c1-10)
+    slug=$(echo "$file" | cut -c12- | sed 's/\.md$//')
+    year=$(echo "$date_part" | cut -d- -f1)
+    month=$(echo "$date_part" | cut -d- -f2)
+    day=$(echo "$date_part" | cut -d- -f3)
+    post_url="https://www.theoutdoorprogrammer.com/${year}/${month}/${day}/${slug}"
+
+    content=$(curl -sS "https://raw.githubusercontent.com/TheOutdoorProgrammer/profile/refs/heads/main/_posts/${file}")
+    frontmatter=$(echo "$content" | sed -n '/^---$/,/^---$/p' | sed '1d;$d')
+
+    title=$(echo "$frontmatter" | yq -r '.title')
+    desc=$(echo "$frontmatter" | yq -r '.description // ""')
+    icon=$(echo "$frontmatter" | yq -r '.icon // ""')
+
+    icon_img=$(iconify_img "$icon")
+    desc=$(echo "$desc" | sed 's/|/\\|/g')
+
+    echo "| ${icon_img}| [${title}](${post_url}) | ${desc} |" >> README.md
+  done
+}
+
 gen_collapsible_sections(){
   length_of_categories=$(echo "$LINKS" | yq '.buttons | length')
 
@@ -210,6 +235,10 @@ gen_collapsible_sections(){
       use_table=true
       echo "| | Name | Description |" >> README.md
       echo "|:-:|------|-------------|" >> README.md
+
+      if [ "$category" = "Blog Posts" ]; then
+        append_site_post_rows
+      fi
     fi
 
     length_of_items=$(echo "$LINKS" | yq ".buttons[$i].items | length")
