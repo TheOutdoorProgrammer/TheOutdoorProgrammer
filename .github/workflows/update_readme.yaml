@@ -29,6 +29,6 @@ jobs:
         uses: actions/checkout@v3
       - name: Update Readme
         env:
-          MAX_POSTS: 5
+          MAX_POSTS: 3
         run: ./.github/workflows/update_readme.sh
       - uses: stefanzweifel/git-auto-commit-action@v5
