@@ -9,6 +9,7 @@
   <a href="https://bsky.app/profile/theoutdoorprogrammer.com"><img src="https://img.shields.io/badge/BlueSky-8be9fd?style=for-the-badge&logo=bluesky&logoColor=282a36" /></a>
   <a href="https://www.linkedin.com/in/theoutdoorprogrammer/"><img src="https://img.shields.io/badge/LinkedIn-bd93f9?style=for-the-badge&logo=linkedin&logoColor=282a36" /></a>
   <a href="mailto:joey@theoutdoorprogrammer.com"><img src="https://img.shields.io/badge/Email-f1fa8c?style=for-the-badge&logo=gmail&logoColor=282a36" /></a>
+  <a href="https://nerdswhofish.org"><img src="https://img.shields.io/badge/Nerds_Who_Fish-50fa7b?style=for-the-badge&logo=data:image/svg%2bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGZpbGw9ImN1cnJlbnRDb2xvciIgZD0ibTEyIDIwbC43Ni0zYy0zLjI2LS4yMS02LjE3LTEuNi03LjAxLTMuNDJjLS4wOS40OC0uMjIuOTItLjQyIDEuMjVDNC42NyAxNiAzLjMzIDE2IDIgMTZjMS4xIDAgMS41LTEuNTcgMS41LTMuNVMzLjEgOSAyIDljMS4zMyAwIDIuNjcgMCAzLjMzIDEuMTdjLjIuMzMuMzMuNzcuNDIgMS4yNWMuNjUtMS40MiAyLjU3LTIuNTcgNC45MS0zLjFMOSA1YzIgMCA0IDAgNS4zMy42N2MxLjEzLjU2IDEuNzggMS42IDIuMzYgMi43MWMyLjkyLjcgNS4zMSAyLjI4IDUuMzEgNC4xMmMwIDEuODgtMi41IDMuNS01LjUgNC4xNmMtLjgzIDEuMS0xLjY0IDIuMTItMi4zMyAyLjY3Yy0uODQuNjctMS41LjY3LTIuMTcuNjdtNS05YTEgMSAwIDAgMC0xIDFhMSAxIDAgMCAwIDEgMWExIDEgMCAwIDAgMS0xYTEgMSAwIDAgMC0xLTEiLz48L3N2Zz4=&logoColor=282a36" /></a>
 </p>
 
 <p align="center">
