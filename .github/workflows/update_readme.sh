@@ -31,8 +31,19 @@ gen_blusky_posts(){
 
       handle=$(echo "$posts" | jq -r ".feed[$i].post.author.handle")
 
+      # Skip posts with no text AND no images
       if [ -z "$text" ]; then
-        continue
+        has_images=$(echo "$posts" | jq ".feed[$i].post.embed.images // [] | length")
+        if [ "$has_images" -gt 0 ] 2>/dev/null; then
+          alt=$(echo "$posts" | jq -r ".feed[$i].post.embed.images[0].alt // empty")
+          if [ -n "$alt" ]; then
+            text="🖼️ $alt"
+          else
+            text="🖼️ Image post"
+          fi
+        else
+          continue
+        fi
       fi
 
       if [ "$handle" != "theoutdoorprogrammer.com" ]; then
