@@ -35,6 +35,10 @@ resource "github_introduction" "joey" {
 
 <table><tr>
 <td width="33%" valign="top" align="center">
+@bsky.app Feature request: Human Verified badge or something. Stand out as being less bot infested. Maybe require those accounts to use a touchable @yubico.com yubikey before posting, something an LLM<br/><br/>
+<sub><a href="https://bsky.app/profile/theoutdoorprogrammer.com/post/3mh7iwn47bk2i">2026-03-16</a></sub>
+</td>
+<td width="33%" valign="top" align="center">
 <a href="https://bsky.app/profile/theoutdoorprogrammer.com/post/3mh6mzgojys2z"><img src="https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:7e7cnwumaewg7s2ryywfu3qe/bafkreifglzduiu62hva2ftkd2qm5dmbydyvanglskbo74mavdji3hmhdny" width="150" alt="" /></a><br/>
 Fit check, free palestine. @wearthepeace.bsky.social<br/><br/>
 <sub><a href="https://bsky.app/profile/theoutdoorprogrammer.com/post/3mh6mzgojys2z">2026-03-16</a></sub>
@@ -42,10 +46,6 @@ Fit check, free palestine. @wearthepeace.bsky.social<br/><br/>
 <td width="33%" valign="top" align="center">
 <a href="https://bsky.app/profile/theoutdoorprogrammer.com/post/3mgi4slpzc22t"><img src="https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:7e7cnwumaewg7s2ryywfu3qe/bafkreif673pmkrekhbf4tgqk4uswaj4c3cop3dm34uyeilhdz2btesijde" width="150" alt="" /></a><br/>
 <sub><a href="https://bsky.app/profile/theoutdoorprogrammer.com/post/3mgi4slpzc22t">2026-03-07</a></sub>
-</td>
-<td width="33%" valign="top" align="center">
-Does even small amounts of debris in the bathtub absolutely gross everyone else out too? Like I could see a single hair and I could not get in that tub until its cleaned.<br/><br/>
-<sub><a href="https://bsky.app/profile/theoutdoorprogrammer.com/post/3mfndaxnww22f">2026-02-24</a></sub>
 </td>
 </tr></table>
 
