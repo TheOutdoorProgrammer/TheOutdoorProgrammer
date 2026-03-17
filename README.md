@@ -9,8 +9,6 @@
   <a href="https://bsky.app/profile/theoutdoorprogrammer.com"><img src="https://img.shields.io/badge/BlueSky-8be9fd?style=for-the-badge&logo=bluesky&logoColor=282a36" /></a>
   <a href="https://www.linkedin.com/in/theoutdoorprogrammer/"><img src="https://img.shields.io/badge/LinkedIn-bd93f9?style=for-the-badge&logo=linkedin&logoColor=282a36" /></a>
   <a href="mailto:joey@theoutdoorprogrammer.com"><img src="https://img.shields.io/badge/Email-f1fa8c?style=for-the-badge&logo=gmail&logoColor=282a36" /></a>
-  <a href="https://nerdswhofish.com"><img src="https://img.shields.io/badge/Nerds_Who_Fish-50fa7b?style=for-the-badge&logo=data:image/svg%2bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGZpbGw9ImN1cnJlbnRDb2xvciIgZD0ibTEyIDIwbC43Ni0zYy0zLjI2LS4yMS02LjE3LTEuNi03LjAxLTMuNDJjLS4wOS40OC0uMjIuOTItLjQyIDEuMjVDNC42NyAxNiAzLjMzIDE2IDIgMTZjMS4xIDAgMS41LTEuNTcgMS41LTMuNVMzLjEgOSAyIDljMS4zMyAwIDIuNjcgMCAzLjMzIDEuMTdjLjIuMzMuMzMuNzcuNDIgMS4yNWMuNjUtMS40MiAyLjU3LTIuNTcgNC45MS0zLjFMOSA1YzIgMCA0IDAgNS4zMy42N2MxLjEzLjU2IDEuNzggMS42IDIuMzYgMi43MWMyLjkyLjcgNS4zMSAyLjI4IDUuMzEgNC4xMmMwIDEuODgtMi41IDMuNS01LjUgNC4xNmMtLjgzIDEuMS0xLjY0IDIuMTItMi4zMyAyLjY3Yy0uODQuNjctMS41LjY3LTIuMTcuNjdtNS05YTEgMSAwIDAgMC0xIDFhMSAxIDAgMCAwIDEgMWExIDEgMCAwIDAgMS0xYTEgMSAwIDAgMC0xLTEiLz48L3N2Zz4=&logoColor=282a36" /></a>
-  <a href="https://keyserver.ubuntu.com/pks/lookup?search=0x1830B516B45606F6&fingerprint=on&op=index"><img src="https://img.shields.io/badge/My_GPG_Key-6272a4?style=for-the-badge&logo=data:image/svg%2bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgNTEyIDUxMiI+PHBhdGggZmlsbD0iI0IxQjRCNSIgZD0iTTM3Ni43NDkgMzQ5LjA5N2MtMTMuNTMxIDAtMjQuNS0xMC45NjktMjQuNS0yNC41VjE4MS45MzJjMC00OC4wODMtMzkuMTE5LTg3LjIwMy04Ny4yMDMtODcuMjAzYy00OC4wODMgMC04Ny4yMDMgMzkuMTE5LTg3LjIwMyA4Ny4yMDN2ODIuOTc3YzAgMTMuNTMxLTEwLjk2OSAyNC41LTI0LjUgMjQuNXMtMjQuNS0xMC45NjktMjQuNS0yNC41di04Mi45NzdjMC03NS4xMDMgNjEuMS0xMzYuMjAzIDEzNi4yMDMtMTM2LjIwM3MxMzYuMjAzIDYxLjEgMTM2LjIwMyAxMzYuMjAzdjE0Mi42NjVjMCAxMy41MzEtMTAuOTY5IDI0LjUtMjQuNSAyNC41Ii8+PHBhdGggZmlsbD0iI0ZGQjYzNiIgZD0iTTQxNC4xMTUgNDk3LjQ1OUgxMTUuOTc3Yy0yNy44MzUgMC01MC40LTIyLjU2NS01MC40LTUwLjRWMjc0LjY5MWMwLTI3LjgzNSAyMi41NjUtNTAuNCA1MC40LTUwLjRoMjk4LjEzOGMyNy44MzUgMCA1MC40IDIyLjU2NSA1MC40IDUwLjR2MTcyLjM2N2MwIDI3LjgzNi0yMi41NjUgNTAuNDAxLTUwLjQgNTAuNDAxIi8+PHBhdGggZmlsbD0iI0ZGRDQ2OSIgZD0iTTEwOS4zMTEgNDU2Ljg0MWgtMi41MjVjLTcuOTUzIDAtMTQuNC02LjQ0Ny0xNC40LTE0LjRWMjc5LjMwOWMwLTcuOTUzIDYuNDQ3LTE0LjQgMTQuNC0xNC40aDIuNTI1YzcuOTUzIDAgMTQuNCA2LjQ0NyAxNC40IDE0LjR2MTYzLjEzMmMwIDcuOTUzLTYuNDQ3IDE0LjQtMTQuNCAxNC40Ii8+PC9zdmc+&logoColor=282a36" /></a>
 </p>
 
 <p align="center">
@@ -35,6 +33,10 @@ resource "github_introduction" "joey" {
 
 <table><tr>
 <td width="33%" valign="top" align="center">
+Check out my linkedin exclusive, Cloudformation Flow www.linkedin.com/feed/update/...<br/><br/>
+<sub><a href="https://bsky.app/profile/theoutdoorprogrammer.com/post/3mhbtbsuyms22">2026-03-17</a></sub>
+</td>
+<td width="33%" valign="top" align="center">
 @bsky.app Feature request: Human Verified badge or something. Stand out as being less bot infested. Maybe require those accounts to use a touchable @yubico.com yubikey before posting, something an LLM<br/><br/>
 <sub><a href="https://bsky.app/profile/theoutdoorprogrammer.com/post/3mh7iwn47bk2i">2026-03-16</a></sub>
 </td>
@@ -42,10 +44,6 @@ resource "github_introduction" "joey" {
 <a href="https://bsky.app/profile/theoutdoorprogrammer.com/post/3mh6mzgojys2z"><img src="https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:7e7cnwumaewg7s2ryywfu3qe/bafkreifglzduiu62hva2ftkd2qm5dmbydyvanglskbo74mavdji3hmhdny" width="150" alt="" /></a><br/>
 Fit check, free palestine. @wearthepeace.bsky.social<br/><br/>
 <sub><a href="https://bsky.app/profile/theoutdoorprogrammer.com/post/3mh6mzgojys2z">2026-03-16</a></sub>
-</td>
-<td width="33%" valign="top" align="center">
-<a href="https://bsky.app/profile/theoutdoorprogrammer.com/post/3mgi4slpzc22t"><img src="https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:7e7cnwumaewg7s2ryywfu3qe/bafkreif673pmkrekhbf4tgqk4uswaj4c3cop3dm34uyeilhdz2btesijde" width="150" alt="" /></a><br/>
-<sub><a href="https://bsky.app/profile/theoutdoorprogrammer.com/post/3mgi4slpzc22t">2026-03-07</a></sub>
 </td>
 </tr></table>
 
