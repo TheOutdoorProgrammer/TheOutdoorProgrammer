@@ -33,17 +33,16 @@ resource "github_introduction" "joey" {
 
 <table><tr>
 <td width="33%" valign="top" align="center">
+Afroman winning his court case has me smiling.<br/><br/>
+<sub><a href="https://bsky.app/profile/theoutdoorprogrammer.com/post/3mheopxsklk2z">2026-03-18</a></sub>
+</td>
+<td width="33%" valign="top" align="center">
 Check out my linkedin exclusive, Cloudformation Flow www.linkedin.com/feed/update/...<br/><br/>
 <sub><a href="https://bsky.app/profile/theoutdoorprogrammer.com/post/3mhbtbsuyms22">2026-03-17</a></sub>
 </td>
 <td width="33%" valign="top" align="center">
 @bsky.app Feature request: Human Verified badge or something. Stand out as being less bot infested. Maybe require those accounts to use a touchable @yubico.com yubikey before posting, something an LLM<br/><br/>
 <sub><a href="https://bsky.app/profile/theoutdoorprogrammer.com/post/3mh7iwn47bk2i">2026-03-16</a></sub>
-</td>
-<td width="33%" valign="top" align="center">
-<a href="https://bsky.app/profile/theoutdoorprogrammer.com/post/3mh6mzgojys2z"><img src="https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:7e7cnwumaewg7s2ryywfu3qe/bafkreifglzduiu62hva2ftkd2qm5dmbydyvanglskbo74mavdji3hmhdny" width="150" alt="" /></a><br/>
-Fit check, free palestine. @wearthepeace.bsky.social<br/><br/>
-<sub><a href="https://bsky.app/profile/theoutdoorprogrammer.com/post/3mh6mzgojys2z">2026-03-16</a></sub>
 </td>
 </tr></table>
 
@@ -70,11 +69,6 @@ Fit check, free palestine. @wearthepeace.bsky.social<br/><br/>
 
 | | Name | Description |
 |:-:|------|-------------|
-| <img src="https://api.iconify.design/mdi/github.svg?color=%23f8f8f2" width="20" height="20" /> | [Redesigning My GitHub Profile README with Bash, YAML, and Way Too Many APIs](https://www.theoutdoorprogrammer.com/2026/03/08/redesigning-my-github-profile-readme) | I rebuilt my GitHub profile README from scratch with auto-generated badges, live BlueSky posts, and a Dracula color scheme, all from a single shell script. |
-| <img src="https://api.iconify.design/twemoji/fishing-pole.svg?color=%23f8f8f2" width="20" height="20" /> | [First Time Ice Fishing on Buckeye Lake with My Boys](https://www.theoutdoorprogrammer.com/2026/02/15/first-time-ice-fishing-buckeye-lake) | I took my two boys ice fishing for the first time on Buckeye Lake in Ohio. We didn't catch a thing — but we learned a lot and we're already planning the next trip. |
-| <img src="https://api.iconify.design/twemoji/fish.svg?color=%23f8f8f2" width="20" height="20" /> | [FishID: A pocket guide for Ohio anglers](https://www.theoutdoorprogrammer.com/2026/02/06/fishid) | I built a simple app to help me learn to identify Ohio fish like second nature. |
-| <img src="https://api.iconify.design/devicon/kubernetes.svg?color=%23f8f8f2" width="20" height="20" /> | [Building My Homelab Kubernetes Cluster](https://www.theoutdoorprogrammer.com/2026/02/04/building-my-homelab-cluster) | How I moved all my self-hosted services to a homelab K8s cluster running on bare metal. |
-| <img src="https://api.iconify.design/vscode-icons/file-type-opentofu.svg?color=%23f8f8f2" width="20" height="20" /> | [OpenTofu, Spacelift, and Target Shooting](https://www.theoutdoorprogrammer.com/2026/01/15/opentofu-spacelift-target-shooting) | Combining two of my favorite things — infrastructure as code and a day at the range. |
 | <img src="https://api.iconify.design/devicon/kubernetes.svg?color=%23f8f8f2" width="20" height="20" /> | [Autoscaling Spacelift Workers In K8s](https://spacelift.io/blog/autoscaling-native-kubernetes-workers) | How to setup autoscaling Spacelift workers in Kubernetes using the Kubernetes Cluster Autoscaler and the Spacelift Worker API. |
 | <img src="https://api.iconify.design/ic/outline-greater-than.svg?color=%23f8f8f2" width="20" height="20" /> | [IAC/Spacelift Best Practices](https://spacelift.io/blog/best-practices-for-iac-and-spacelift) | Best practices for organizing IaC repositories, structuring Spacelift Spaces, modularizing Terraform code, and fostering team collaboration. |
 | <img src="https://api.iconify.design/oui/app-metrics.svg?color=%23f8f8f2" width="20" height="20" /> | [K8s/OpenMetrics/Datadog](https://medium.com/beambenefits/collecting-open-metrics-in-k8s-and-shipping-to-datadog-5345cd27ef18) | Collecting custom OpenMetrics in Kubernetes with Prometheus exporter and shipping them to Datadog for alerting. |
