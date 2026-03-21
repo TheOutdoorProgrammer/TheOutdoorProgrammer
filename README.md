@@ -33,16 +33,16 @@ resource "github_introduction" "joey" {
 
 <table><tr>
 <td width="33%" valign="top" align="center">
+Would pickle flavored ice cream be good? im torn.<br/><br/>
+<sub><a href="https://bsky.app/profile/theoutdoorprogrammer.com/post/3mhm7dte2ms2o">2026-03-21</a></sub>
+</td>
+<td width="33%" valign="top" align="center">
 Afroman winning his court case has me smiling.<br/><br/>
 <sub><a href="https://bsky.app/profile/theoutdoorprogrammer.com/post/3mheopxsklk2z">2026-03-18</a></sub>
 </td>
 <td width="33%" valign="top" align="center">
 Check out my linkedin exclusive, Cloudformation Flow www.linkedin.com/feed/update/...<br/><br/>
 <sub><a href="https://bsky.app/profile/theoutdoorprogrammer.com/post/3mhbtbsuyms22">2026-03-17</a></sub>
-</td>
-<td width="33%" valign="top" align="center">
-@bsky.app Feature request: Human Verified badge or something. Stand out as being less bot infested. Maybe require those accounts to use a touchable @yubico.com yubikey before posting, something an LLM<br/><br/>
-<sub><a href="https://bsky.app/profile/theoutdoorprogrammer.com/post/3mh7iwn47bk2i">2026-03-16</a></sub>
 </td>
 </tr></table>
 
