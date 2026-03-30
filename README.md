@@ -33,16 +33,16 @@ resource "github_introduction" "joey" {
 
 <table><tr>
 <td width="33%" valign="top" align="center">
+When carvana emails me and says Joseph we have a surprise for you. I feel like I should be able to sue them for not giving me a free car and instead surprising me with a $900/month truck payment.....<br/><br/>
+<sub><a href="https://bsky.app/profile/theoutdoorprogrammer.com/post/3micdps6vlk2z">2026-03-30</a></sub>
+</td>
+<td width="33%" valign="top" align="center">
 I slept so good last night. I havent had an energy drink in about a week now. Its probably fully out of my system finally.<br/><br/>
 <sub><a href="https://bsky.app/profile/theoutdoorprogrammer.com/post/3mi4r26qegs2o">2026-03-28</a></sub>
 </td>
 <td width="33%" valign="top" align="center">
 Would pickle flavored ice cream be good? im torn.<br/><br/>
 <sub><a href="https://bsky.app/profile/theoutdoorprogrammer.com/post/3mhm7dte2ms2o">2026-03-21</a></sub>
-</td>
-<td width="33%" valign="top" align="center">
-Afroman winning his court case has me smiling.<br/><br/>
-<sub><a href="https://bsky.app/profile/theoutdoorprogrammer.com/post/3mheopxsklk2z">2026-03-18</a></sub>
 </td>
 </tr></table>
 
