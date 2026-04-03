@@ -33,16 +33,16 @@ resource "github_introduction" "joey" {
 
 <table><tr>
 <td width="33%" valign="top" align="center">
+My talk at MCP Dev Summit in NY was today. You can see it on youtube 😊 www.youtube.com/watch?v=0Lxy...<br/><br/>
+<sub><a href="https://bsky.app/profile/theoutdoorprogrammer.com/post/3mimke26uqc2z">2026-04-03</a></sub>
+</td>
+<td width="33%" valign="top" align="center">
 Do you think when Trump fires folks he does it like hes still on The Apprentice?<br/><br/>
 <sub><a href="https://bsky.app/profile/theoutdoorprogrammer.com/post/3mik24icka22z">2026-04-02</a></sub>
 </td>
 <td width="33%" valign="top" align="center">
 Neil would be proud. Buzz is.<br/><br/>
 <sub><a href="https://bsky.app/profile/theoutdoorprogrammer.com/post/3mihrxgpork2t">2026-04-01</a></sub>
-</td>
-<td width="33%" valign="top" align="center">
-When carvana emails me and says Joseph we have a surprise for you. I feel like I should be able to sue them for not giving me a free car and instead surprising me with a $900/month truck payment.....<br/><br/>
-<sub><a href="https://bsky.app/profile/theoutdoorprogrammer.com/post/3micdps6vlk2z">2026-03-30</a></sub>
 </td>
 </tr></table>
 
