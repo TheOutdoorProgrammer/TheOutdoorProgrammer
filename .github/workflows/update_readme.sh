@@ -196,7 +196,7 @@ append_site_post_rows(){
     frontmatter=$(echo "$content" | sed -n '/^---$/,/^---$/p' | sed '1d;$d')
 
     title=$(echo "$frontmatter" | yq -r '.title')
-    desc=$(echo "$frontmatter" | yq -r '.description // ""'
+    desc=$(echo "$frontmatter" | yq -r '.description // ""')
     desc=$(echo "$desc" | sed 's/|/\\|/g')
 
     echo "| | [${title}](${post_url}) | ${desc} |" >> README.md
