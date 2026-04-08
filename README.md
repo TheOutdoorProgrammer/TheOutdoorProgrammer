@@ -34,16 +34,16 @@ resource "github_introduction" "joey" {
 
 <table><tr>
 <td width="33%" valign="top" align="center">
+The nights when my oldest<br/><br/>
+<sub><a href="https://bsky.app/profile/theoutdoorprogrammer.com/post/3mix55qxnps2g">2026-04-08</a></sub>
+</td>
+<td width="33%" valign="top" align="center">
 I was officially diagnosed with ADHD this past week lmao explains a lot<br/><br/>
 <sub><a href="https://bsky.app/profile/theoutdoorprogrammer.com/post/3mitxnykkcs22">2026-04-06</a></sub>
 </td>
 <td width="33%" valign="top" align="center">
 Ed Kemper is still alive? Wow.<br/><br/>
 <sub><a href="https://bsky.app/profile/theoutdoorprogrammer.com/post/3mipoi55jvs2c">2026-04-05</a></sub>
-</td>
-<td width="33%" valign="top" align="center">
-My talk at MCP Dev Summit in NY was today. You can see it on youtube 😊 www.youtube.com/watch?v=0Lxy...<br/><br/>
-<sub><a href="https://bsky.app/profile/theoutdoorprogrammer.com/post/3mimke26uqc2z">2026-04-03</a></sub>
 </td>
 </tr></table>
 
