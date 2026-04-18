@@ -34,16 +34,17 @@ resource "github_introduction" "joey" {
 
 <table><tr>
 <td width="33%" valign="top" align="center">
+<a href="https://bsky.app/profile/theoutdoorprogrammer.com/post/3mjsj2qae3k2q"><img src="https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:7e7cnwumaewg7s2ryywfu3qe/bafkreibgu7a7awr2bxj33sgenrylbslxuc36svvowsmets7yn3to6srxpm" width="150" alt="" /></a><br/>
+Having boys is fun<br/><br/>
+<sub><a href="https://bsky.app/profile/theoutdoorprogrammer.com/post/3mjsj2qae3k2q">2026-04-18</a></sub>
+</td>
+<td width="33%" valign="top" align="center">
 I got a minibike today. Terrible idea. Now I want MORE<br/><br/>
 <sub><a href="https://bsky.app/profile/theoutdoorprogrammer.com/post/3mjnqh4dmkk2q">2026-04-17</a></sub>
 </td>
 <td width="33%" valign="top" align="center">
 new blog post who dis www.theoutdoorprogrammer.com/blog/2026/04...<br/><br/>
 <sub><a href="https://bsky.app/profile/theoutdoorprogrammer.com/post/3mj75lvbnqk2y">2026-04-11</a></sub>
-</td>
-<td width="33%" valign="top" align="center">
-The nights when my oldest<br/><br/>
-<sub><a href="https://bsky.app/profile/theoutdoorprogrammer.com/post/3mix55qxnps2g">2026-04-08</a></sub>
 </td>
 </tr></table>
 
