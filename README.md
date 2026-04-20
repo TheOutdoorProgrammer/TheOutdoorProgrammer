@@ -34,6 +34,10 @@ resource "github_introduction" "joey" {
 
 <table><tr>
 <td width="33%" valign="top" align="center">
+Things a Clownfish would say: The anemone of my enemy is my anemone<br/><br/>
+<sub><a href="https://bsky.app/profile/theoutdoorprogrammer.com/post/3mjwfoc6ql22o">2026-04-20</a></sub>
+</td>
+<td width="33%" valign="top" align="center">
 <a href="https://bsky.app/profile/theoutdoorprogrammer.com/post/3mjsj2qae3k2q"><img src="https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:7e7cnwumaewg7s2ryywfu3qe/bafkreibgu7a7awr2bxj33sgenrylbslxuc36svvowsmets7yn3to6srxpm" width="150" alt="" /></a><br/>
 Having boys is fun<br/><br/>
 <sub><a href="https://bsky.app/profile/theoutdoorprogrammer.com/post/3mjsj2qae3k2q">2026-04-18</a></sub>
@@ -41,10 +45,6 @@ Having boys is fun<br/><br/>
 <td width="33%" valign="top" align="center">
 I got a minibike today. Terrible idea. Now I want MORE<br/><br/>
 <sub><a href="https://bsky.app/profile/theoutdoorprogrammer.com/post/3mjnqh4dmkk2q">2026-04-17</a></sub>
-</td>
-<td width="33%" valign="top" align="center">
-new blog post who dis www.theoutdoorprogrammer.com/blog/2026/04...<br/><br/>
-<sub><a href="https://bsky.app/profile/theoutdoorprogrammer.com/post/3mj75lvbnqk2y">2026-04-11</a></sub>
 </td>
 </tr></table>
 
