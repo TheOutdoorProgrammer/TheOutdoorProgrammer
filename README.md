@@ -34,6 +34,10 @@ resource "github_introduction" "joey" {
 
 <table><tr>
 <td width="33%" valign="top" align="center">
+Does AI make anyone else feel existential? I like it, its fascinating and a real leap. But the water, the electricity, the pace its accelerating. And the stuff we cant control: people getting hurt by it, it escaping, every news article is negative. Excited for where its going, but also very worried.<br/><br/>
+<sub><a href="https://bsky.app/profile/theoutdoorprogrammer.com/post/3mk7dsvmgps2a">2026-04-24</a></sub>
+</td>
+<td width="33%" valign="top" align="center">
 Things a Clownfish would say: The anemone of my enemy is my anemone<br/><br/>
 <sub><a href="https://bsky.app/profile/theoutdoorprogrammer.com/post/3mjwfoc6ql22o">2026-04-20</a></sub>
 </td>
@@ -41,10 +45,6 @@ Things a Clownfish would say: The anemone of my enemy is my anemone<br/><br/>
 <a href="https://bsky.app/profile/theoutdoorprogrammer.com/post/3mjsj2qae3k2q"><img src="https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:7e7cnwumaewg7s2ryywfu3qe/bafkreibgu7a7awr2bxj33sgenrylbslxuc36svvowsmets7yn3to6srxpm" width="150" alt="" /></a><br/>
 Having boys is fun<br/><br/>
 <sub><a href="https://bsky.app/profile/theoutdoorprogrammer.com/post/3mjsj2qae3k2q">2026-04-18</a></sub>
-</td>
-<td width="33%" valign="top" align="center">
-I got a minibike today. Terrible idea. Now I want MORE<br/><br/>
-<sub><a href="https://bsky.app/profile/theoutdoorprogrammer.com/post/3mjnqh4dmkk2q">2026-04-17</a></sub>
 </td>
 </tr></table>
 
