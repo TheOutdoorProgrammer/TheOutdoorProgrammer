@@ -34,6 +34,10 @@ resource "github_introduction" "joey" {
 
 <table><tr>
 <td width="33%" valign="top" align="center">
+Trump doesnt listen to the law, why should anthropic? #freefable<br/><br/>
+<sub><a href="https://bsky.app/profile/theoutdoorprogrammer.com/post/3moh5gsnugk2z">2026-06-17</a></sub>
+</td>
+<td width="33%" valign="top" align="center">
 <a href="https://bsky.app/profile/annenotation.bsky.social/post/3mnxhy5i5rs2r"><img src="https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:pc7hnprxwmeqfmbuhwpols5q/bafkreifps5iuev6vmo4ieqgywqt76ml7hixsr3667xwktwjzgacu77yn3i" width="150" alt="" /></a><br/>
 🔄 @annenotation.bsky.social: This is probably the most traditional possible behavior for the family of a pope.<br/><br/>
 <sub><a href="https://bsky.app/profile/annenotation.bsky.social/post/3mnxhy5i5rs2r">2026-06-10</a></sub>
@@ -41,10 +45,6 @@ resource "github_introduction" "joey" {
 <td width="33%" valign="top" align="center">
 This is hilarious and I see this in my future because I put Shelly relays behind ever single switch in my house so I will probably forget about switches too 😂<br/><br/>
 <sub><a href="https://bsky.app/profile/theoutdoorprogrammer.com/post/3ml22pow25k2e">2026-05-04</a></sub>
-</td>
-<td width="33%" valign="top" align="center">
-Sickness is so nasty when you think about how its transmitted. Like sickness is terrible to begin with but what do you mean your nose bugers/spit/whatever carried the germ from you to me went into my body???<br/><br/>
-<sub><a href="https://bsky.app/profile/theoutdoorprogrammer.com/post/3ml22n67w7s2e">2026-05-04</a></sub>
 </td>
 </tr></table>
 
