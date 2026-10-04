@@ -42,15 +42,16 @@ resource "github_introduction" "joey" {
 
 <table><tr>
 <td width="33%" valign="top" align="center">
+Cows in the fields. Oops.<br/><br/>
+<sub><a href="https://bsky.app/profile/theoutdoorprogrammer.com/post/3mx3gu46exk2o">2026-10-04</a></sub>
+</td>
+<td width="33%" valign="top" align="center">
 GUYS! Im in a podcast! Its awesome! Watch our first episode if you are interested in nerd stuff! This first episode is about #openpolicyagent #opa #rego and we talk about how not-hard it is! Spotify: open.spotify.com/show/0dNIjle... Youtube: www.youtube.com/playlist?lis...<br/><br/>
 <sub><a href="https://bsky.app/profile/theoutdoorprogrammer.com/post/3mv6kmjx43s2i">2026-09-10</a></sub>
 </td>
 <td width="33%" valign="top" align="center">
 Is it called a Cesar Salad because you stab the Italian parts with a fork multiple times?<br/><br/>
 <sub><a href="https://bsky.app/profile/theoutdoorprogrammer.com/post/3mt4sx7rk3222">2026-08-15</a></sub>
-</td>
-<td width="33%" valign="top" align="center">
-<sub><a href="https://bsky.app/profile/theoutdoorprogrammer.com/post/3mt4sdvpcqs2w">2026-08-15</a></sub>
 </td>
 </tr></table>
 
