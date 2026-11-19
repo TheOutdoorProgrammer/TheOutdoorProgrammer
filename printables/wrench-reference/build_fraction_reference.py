@@ -4,12 +4,14 @@
 # ///
 """Generate a true-size SAE socket reference and its PNG preview."""
 
+from decimal import ROUND_HALF_UP, Decimal
 from fractions import Fraction
 from math import cos, pi, sin, sqrt
 from pathlib import Path
 
 import pymupdf
 from reportlab.lib.colors import HexColor
+from reportlab.pdfbase.pdfmetrics import stringWidth
 from reportlab.pdfgen import canvas
 
 OUT = Path(__file__).resolve().parent
@@ -46,9 +48,30 @@ def equivalents(value):
     return forms
 
 
+def equivalent_lines(value):
+    lines = []
+    current = ""
+    for form in equivalents(value):
+        candidate = current + " = " + form if current else "= " + form
+        if stringWidth(candidate, "Helvetica", 8) > 58:
+            lines.append(current)
+            current = "= " + form
+        else:
+            current = candidate
+    if current:
+        lines.append(current)
+    return lines
+
+
+def metric(value):
+    millimeters = Decimal(value.numerator) * Decimal("25.4") / value.denominator
+    rounded = millimeters.quantize(Decimal("0.1"), rounding=ROUND_HALF_UP)
+    return f"~ {rounded} mm"
+
+
 C = canvas.Canvas(str(PDF), pagesize=(WIDTH, HEIGHT), pageCompression=1)
 C.setTitle("SAE Socket Sizes | Shop Reference")
-C.setSubject("True-size opening guides from 3/16 to 1 1/4 inch; common sizes labeled")
+C.setSubject("True-size SAE opening guides with approximate metric measurements and common size labels")
 C.setFillColor(INK)
 C.setFont("Helvetica-Bold", 20)
 C.drawString(MARGIN, HEIGHT - 58, "SAE SOCKET SIZES")
@@ -66,18 +89,18 @@ for x in (494, 566):
 def column(x, sizes):
     top = 82
     for size in sizes:
-        forms = equivalents(size)
+        details = [metric(size), *equivalent_lines(size)]
         diameter = float(size) * 72
-        row_height = max(diameter + 2, 18 + 9 * len(forms))
+        row_height = max(diameter + 2, 18 + 9 * len(details))
         center_y = HEIGHT - top - row_height / 2
-        baseline = center_y + (14 + 9 * len(forms)) / 2 - 12
+        baseline = center_y + (14 + 9 * len(details)) / 2 - 12
         C.setFillColor(INK)
         C.setFont("Helvetica-Bold", 14)
         C.drawString(x + 5, baseline, mixed(size))
         C.setFillColor(MUTED)
-        C.setFont("Helvetica", 8.5)
-        for index, form in enumerate(forms, start=1):
-            C.drawString(x + 5, baseline - index * 9, "= " + form)
+        C.setFont("Helvetica", 8)
+        for index, detail in enumerate(details, start=1):
+            C.drawString(x + 5, baseline - index * 9, detail)
 
         center_x = x + 119
         # The circle is inscribed: its diameter equals the hex's across-flats size.

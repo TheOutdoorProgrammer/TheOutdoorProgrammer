@@ -22,7 +22,9 @@ The script declares its dependencies and checks that the result fits on one US L
 ## SAE socket sizes
 
 [Print the fraction chart](fraction-size-order.pdf) for a smallest-to-largest reference covering every 1/32 inch from 3/16 through 1 1/4.
-Each row shows the size, equivalent fractions where applicable, and true-size circle and hexagon guides.
+Each row shows the size, its approximate metric measurement, equivalent fractions where applicable, and true-size circle and hexagon guides.
+Metric measurements use exactly 25.4 millimeters per inch and are rounded to one decimal place, with halves rounded up.
+The approximate metric measurements are conversions, not guaranteed interchangeable metric socket sizes.
 Read down each of the three columns, from left to right.
 
 Each circle contains C for common or U for uncommon.
