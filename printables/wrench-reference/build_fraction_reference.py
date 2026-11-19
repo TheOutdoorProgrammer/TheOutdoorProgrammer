@@ -18,7 +18,6 @@ SIZES = [Fraction(n, 32) for n in range(6, 41)]
 INK = HexColor("#172731")
 MUTED = HexColor("#47545B")
 RULE = HexColor("#D3D9DC")
-SHADE = HexColor("#EAF0F3")
 WIDTH, HEIGHT = 612, 792
 MARGIN = 36
 COMMON = {size for size in SIZES if (size * 16).denominator == 1}
@@ -49,12 +48,12 @@ def equivalents(value):
 
 C = canvas.Canvas(str(PDF), pagesize=(WIDTH, HEIGHT), pageCompression=1)
 C.setTitle("SAE Socket Sizes | Shop Reference")
-C.setSubject("True-size opening guides from 3/16 to 1 1/4 inch; common sizes shaded")
+C.setSubject("True-size opening guides from 3/16 to 1 1/4 inch; common sizes labeled")
 C.setFillColor(INK)
 C.setFont("Helvetica-Bold", 20)
 C.drawString(MARGIN, HEIGHT - 58, "SAE SOCKET SIZES")
 C.setFont("Helvetica", 8.5)
-C.drawString(MARGIN, HEIGHT - 73, "Letter at 100% / Actual size   |   Match the socket opening   |   Shaded = common")
+C.drawString(MARGIN, HEIGHT - 73, "Letter at 100% / Actual size   |   Match the socket opening   |   C = common / U = uncommon")
 C.setFont("Helvetica-Bold", 7.5)
 C.drawCentredString(530, HEIGHT - 45, '1" PRINT CHECK')
 C.setStrokeColor(INK)
@@ -71,9 +70,6 @@ def column(x, sizes):
         diameter = float(size) * 72
         row_height = max(diameter + 2, 18 + 9 * len(forms))
         center_y = HEIGHT - top - row_height / 2
-        if size in COMMON:
-            C.setFillColor(SHADE)
-            C.rect(x, HEIGHT - top - row_height, 174, row_height, stroke=0, fill=1)
         baseline = center_y + (14 + 9 * len(forms)) / 2 - 12
         C.setFillColor(INK)
         C.setFont("Helvetica-Bold", 14)
@@ -103,6 +99,9 @@ def column(x, sizes):
         C.setStrokeColor(INK)
         C.setLineWidth(0.6)
         C.circle(center_x, center_y, diameter / 2, stroke=1, fill=0)
+        C.setFillColor(INK)
+        C.setFont("Helvetica-Bold", 9)
+        C.drawCentredString(center_x, center_y - 3.2, "C" if size in COMMON else "U")
         C.setStrokeColor(RULE)
         C.setLineWidth(0.4)
         C.line(x, HEIGHT - top - row_height, x + 174, HEIGHT - top - row_height)

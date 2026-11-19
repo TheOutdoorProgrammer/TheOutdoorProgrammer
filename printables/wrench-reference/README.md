@@ -25,9 +25,10 @@ The script declares its dependencies and checks that the result fits on one US L
 Each row shows the size, equivalent fractions where applicable, and true-size circle and hexagon guides.
 Read down each of the three columns, from left to right.
 
-Shaded rows mark common socket sizes: every 1/16-inch increment in this range, plus 7/32, 9/32, and 11/32.
+Each circle contains C for common or U for uncommon.
+Common socket sizes are every 1/16-inch increment in this range, plus 7/32, 9/32, and 11/32.
 This selection follows the contents of Tekton's [small-drive set](https://www.tekton.com/1-4-inch-drive-shallow-6-point-socket-set-shd90101) and [larger-drive set](https://www.tekton.com/1-2-inch-drive-shallow-and-deep-6-point-socket-and-ratchet-set-skt25302); individual sets vary.
-Unshaded sizes remain on the chart for reference.
+Other sizes remain on the chart for reference.
 
 [View the fraction chart preview](fraction-size-order.png).
 Print on US Letter, portrait, at **100% / Actual size**, with **Fit to page disabled**.
