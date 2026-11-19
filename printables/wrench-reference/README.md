@@ -19,15 +19,26 @@ uv run --script build_reference.py
 
 The script declares its dependencies and checks that the result fits on one US Letter page.
 
-## SAE wrench sizes
+## SAE socket sizes
 
 [Print the fraction chart](fraction-size-order.pdf) for a smallest-to-largest reference covering every 1/32 inch from 3/16 through 1 1/4.
-Each row shows the size and equivalent fractions where applicable.
-Shaded rows mark 1/8-inch steps.
-Read down the left column, then down the right.
+Each row shows the size, equivalent fractions where applicable, and true-size circle and hexagon guides.
+Read down each of the three columns, from left to right.
+
+Shaded rows mark common socket sizes: every 1/16-inch increment in this range, plus 7/32, 9/32, and 11/32.
+This selection follows the contents of Tekton's [small-drive set](https://www.tekton.com/1-4-inch-drive-shallow-6-point-socket-set-shd90101) and [larger-drive set](https://www.tekton.com/1-2-inch-drive-shallow-and-deep-6-point-socket-and-ratchet-set-skt25302); individual sets vary.
+Unshaded sizes remain on the chart for reference.
 
 [View the fraction chart preview](fraction-size-order.png).
-Use the same US Letter, portrait, 100% print settings as the wrench chart.
+Print on US Letter, portrait, at **100% / Actual size**, with **Fit to page disabled**.
+All content stays inside half-inch margins.
+Measure the calibration line between its end ticks: it must be exactly one inch.
+The 1-inch circle also provides a check in both horizontal and vertical directions.
+If either measurement is off, correct the printer scaling before using the outlines.
+
+Each circle's diameter and each hexagon's distance across opposite flats equal the labeled size.
+Compare the socket's internal working opening, not its outside diameter or square drive recess.
+The guides show nominal dimensions; socket tolerances and entrance chamfers can affect a visual comparison.
 
 To regenerate this chart:
 
