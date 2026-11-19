@@ -22,7 +22,7 @@ The script declares its dependencies and checks that the result fits on one US L
 ## SAE socket sizes
 
 [Print the fraction chart](fraction-size-order.pdf) for a smallest-to-largest reference covering every 1/32 inch from 3/16 through 1 1/4.
-Each row shows the size, its approximate metric measurement, equivalent fractions where applicable, and true-size circle and hexagon guides.
+Each row shows the size with its approximate metric measurement in parentheses on the same line, equivalent fractions where applicable, and true-size circle and hexagon guides.
 Metric measurements use exactly 25.4 millimeters per inch and are rounded to one decimal place, with halves rounded up.
 The approximate metric measurements are conversions, not guaranteed interchangeable metric socket sizes.
 Read down each of the three columns, from left to right.
@@ -43,7 +43,21 @@ Each circle's diameter and each hexagon's distance across opposite flats equal t
 Compare the socket's internal working opening, not its outside diameter or square drive recess.
 The guides show nominal dimensions; socket tolerances and entrance chamfers can affect a visual comparison.
 
-To regenerate this chart:
+## Metric socket sizes
+
+[Print the metric sheet](metric-socket-reference.pdf) or [view its preview](metric-socket-reference.png).
+It covers 4–32 mm in whole-millimeter steps, plus 4.5 and 5.5 mm.
+The comparison in parentheses is the nearest 1/32 inch, marked with `~` because it is approximate.
+Outlines always match the main metric size, not the rounded inch comparison.
+
+All sizes on this metric sheet occur in the referenced standard sets and carry C.
+The metric selection follows Tekton's [4–15 mm set](https://www.tekton.com/1-4-inch-drive-deep-12-point-socket-set-shd90114) and the larger-drive set linked above.
+Common means included in these complete socket sets; it does not rank how often a particular fastener size is used.
+The same half-inch margins, print settings, and opening-comparison guidance apply to both sheets.
+
+[Print both sheets together](socket-reference-sheets.pdf).
+
+To regenerate both socket sheets, their previews, and the combined two-page PDF:
 
 ```sh
 uv run --script build_fraction_reference.py

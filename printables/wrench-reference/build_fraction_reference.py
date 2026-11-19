@@ -2,7 +2,7 @@
 # requires-python = ">=3.11"
 # dependencies = ["reportlab>=4,<5", "pymupdf>=1.24,<2"]
 # ///
-"""Generate a true-size SAE socket reference and its PNG preview."""
+"""Generate matching true-size SAE and metric socket references."""
 
 from decimal import ROUND_HALF_UP, Decimal
 from fractions import Fraction
@@ -15,8 +15,8 @@ from reportlab.pdfbase.pdfmetrics import stringWidth
 from reportlab.pdfgen import canvas
 
 OUT = Path(__file__).resolve().parent
-PDF = OUT / "fraction-size-order.pdf"
 SIZES = [Fraction(n, 32) for n in range(6, 41)]
+METRIC_SIZES = sorted([Fraction(n) for n in range(4, 33)] + [Fraction("4.5"), Fraction("5.5")])
 INK = HexColor("#172731")
 MUTED = HexColor("#47545B")
 RULE = HexColor("#D3D9DC")
@@ -66,41 +66,40 @@ def equivalent_lines(value):
 def metric(value):
     millimeters = Decimal(value.numerator) * Decimal("25.4") / value.denominator
     rounded = millimeters.quantize(Decimal("0.1"), rounding=ROUND_HALF_UP)
-    return f"~ {rounded} mm"
+    return f"({rounded} mm)"
 
 
-C = canvas.Canvas(str(PDF), pagesize=(WIDTH, HEIGHT), pageCompression=1)
-C.setTitle("SAE Socket Sizes | Shop Reference")
-C.setSubject("True-size SAE opening guides with approximate metric measurements and common size labels")
-C.setFillColor(INK)
-C.setFont("Helvetica-Bold", 20)
-C.drawString(MARGIN, HEIGHT - 58, "SAE SOCKET SIZES")
-C.setFont("Helvetica", 8.5)
-C.drawString(MARGIN, HEIGHT - 73, "Letter at 100% / Actual size   |   Match the socket opening   |   C = common / U = uncommon")
-C.setFont("Helvetica-Bold", 7.5)
-C.drawCentredString(530, HEIGHT - 45, '1" PRINT CHECK')
-C.setStrokeColor(INK)
-C.setLineWidth(0.6)
-C.line(494, HEIGHT - 54, 566, HEIGHT - 54)
-for x in (494, 566):
-    C.line(x, HEIGHT - 50, x, HEIGHT - 58)
+def inch_comparison(millimeters):
+    steps = millimeters / Fraction("25.4") * 32
+    nearest = (steps + Fraction(1, 2)).numerator // (steps + Fraction(1, 2)).denominator
+    return f'(~{mixed(Fraction(nearest, 32))}")'
 
 
-def column(x, sizes):
+def column(c, x, sizes, metric_sheet):
     top = 82
+    rows = []
     for size in sizes:
-        details = [metric(size), *equivalent_lines(size)]
-        diameter = float(size) * 72
-        row_height = max(diameter + 2, 18 + 9 * len(details))
+        details = [] if metric_sheet else equivalent_lines(size)
+        diameter = float(size / Fraction("25.4") if metric_sheet else size) * 72
+        rows.append((size, details, diameter, max(diameter + 2, 18 + 9 * len(details))))
+    extra = (673 - sum(row[3] for row in rows)) / len(rows)
+    assert extra >= 0
+    for size, details, diameter, minimum_height in rows:
+        row_height = minimum_height + extra
         center_y = HEIGHT - top - row_height / 2
-        baseline = center_y + (14 + 9 * len(details)) / 2 - 12
-        C.setFillColor(INK)
-        C.setFont("Helvetica-Bold", 14)
-        C.drawString(x + 5, baseline, mixed(size))
-        C.setFillColor(MUTED)
-        C.setFont("Helvetica", 8)
+        baseline = HEIGHT - top - 14
+        label = f"{float(size):g} mm" if metric_sheet else mixed(size)
+        comparison = inch_comparison(size) if metric_sheet else metric(size)
+        c.setFillColor(INK)
+        c.setFont("Helvetica-Bold", 13)
+        c.drawString(x + 5, baseline, label)
+        comparison_x = x + 8 + stringWidth(label, "Helvetica-Bold", 13)
+        c.setFillColor(MUTED)
+        c.setFont("Helvetica", 7)
+        c.drawString(comparison_x, baseline, comparison)
+        c.setFont("Helvetica", 8)
         for index, detail in enumerate(details, start=1):
-            C.drawString(x + 5, baseline - index * 9, detail)
+            c.drawString(x + 5, baseline - index * 9, detail)
 
         center_x = x + 119
         # The circle is inscribed: its diameter equals the hex's across-flats size.
@@ -111,44 +110,78 @@ def column(x, sizes):
             for i in range(6)
         ]
         assert abs(max(y for _, y in vertices) - min(y for _, y in vertices) - diameter) < 1e-9
-        hexagon = C.beginPath()
+        hexagon = c.beginPath()
         hexagon.moveTo(*vertices[0])
         for vertex in vertices[1:]:
             hexagon.lineTo(*vertex)
         hexagon.close()
-        C.setStrokeColor(MUTED)
-        C.setLineWidth(0.4)
-        C.drawPath(hexagon, stroke=1, fill=0)
-        C.setStrokeColor(INK)
-        C.setLineWidth(0.6)
-        C.circle(center_x, center_y, diameter / 2, stroke=1, fill=0)
-        C.setFillColor(INK)
-        C.setFont("Helvetica-Bold", 9)
-        C.drawCentredString(center_x, center_y - 3.2, "C" if size in COMMON else "U")
-        C.setStrokeColor(RULE)
-        C.setLineWidth(0.4)
-        C.line(x, HEIGHT - top - row_height, x + 174, HEIGHT - top - row_height)
+        c.setStrokeColor(MUTED)
+        c.setLineWidth(0.4)
+        c.drawPath(hexagon, stroke=1, fill=0)
+        c.setStrokeColor(INK)
+        c.setLineWidth(0.6)
+        c.circle(center_x, center_y, diameter / 2, stroke=1, fill=0)
+        c.setFillColor(INK)
+        c.setFont("Helvetica-Bold", 9)
+        c.drawCentredString(center_x, center_y - 3.2, "C" if metric_sheet or size in COMMON else "U")
+        c.setStrokeColor(RULE)
+        c.setLineWidth(0.4)
+        c.line(x, HEIGHT - top - row_height, x + 174, HEIGHT - top - row_height)
         top += row_height
     assert top <= HEIGHT - MARGIN - 0.3, top
 
 
-column(36, SIZES[:17])
-column(219, SIZES[17:27])
-column(402, SIZES[27:])
-C.showPage()
-C.save()
+def build_sheet(stem, title, columns, metric_sheet=False):
+    pdf = OUT / f"{stem}.pdf"
+    c = canvas.Canvas(str(pdf), pagesize=(WIDTH, HEIGHT), pageCompression=1)
+    c.setTitle(f"{title.title()} | Shop Reference")
+    c.setSubject("True-size socket opening guides; parenthetical comparisons are approximate")
+    c.setFillColor(INK)
+    c.setFont("Helvetica-Bold", 20)
+    c.drawString(MARGIN, HEIGHT - 58, title)
+    c.setFont("Helvetica", 8)
+    c.drawString(MARGIN, HEIGHT - 73, "Letter at 100% / Actual size   |   Comparisons approximate   |   C = common / U = uncommon")
+    c.setFont("Helvetica-Bold", 7.5)
+    c.drawCentredString(530, HEIGHT - 45, '1" PRINT CHECK')
+    c.setStrokeColor(INK)
+    c.setLineWidth(0.6)
+    c.line(494, HEIGHT - 54, 566, HEIGHT - 54)
+    for x in (494, 566):
+        c.line(x, HEIGHT - 50, x, HEIGHT - 58)
+    for x, sizes in zip((36, 219, 402), columns, strict=True):
+        column(c, x, sizes, metric_sheet)
+    c.showPage()
+    c.save()
 
-doc = pymupdf.open(PDF)
-assert len(doc) == 1
-assert tuple(doc[0].rect) == (0, 0, WIDTH, HEIGHT)
-for block in doc[0].get_text("blocks"):
-    assert MARGIN <= block[0] < block[2] <= WIDTH - MARGIN, block
-    assert MARGIN <= block[1] < block[3] <= HEIGHT - MARGIN, block
-for drawing in doc[0].get_drawings():
-    bounds = drawing["rect"]
-    assert bounds.x0 >= MARGIN and bounds.x1 <= WIDTH - MARGIN, bounds
-    assert bounds.y0 >= MARGIN and bounds.y1 <= HEIGHT - MARGIN, bounds
-doc[0].get_pixmap(matrix=pymupdf.Matrix(2, 2), alpha=False).save(
-    OUT / "fraction-size-order.png"
-)
-print(f"Built {PDF}: 1 US Letter page, {len(SIZES)} sizes.")
+    with pymupdf.open(pdf) as doc:
+        assert len(doc) == 1
+        assert tuple(doc[0].rect) == (0, 0, WIDTH, HEIGHT)
+        for block in doc[0].get_text("blocks"):
+            assert MARGIN <= block[0] < block[2] <= WIDTH - MARGIN, block
+            assert MARGIN <= block[1] < block[3] <= HEIGHT - MARGIN, block
+        for drawing in doc[0].get_drawings():
+            bounds = drawing["rect"]
+            assert bounds.x0 >= MARGIN and bounds.x1 <= WIDTH - MARGIN, bounds
+            assert bounds.y0 >= MARGIN and bounds.y1 <= HEIGHT - MARGIN, bounds
+        doc[0].get_pixmap(matrix=pymupdf.Matrix(2, 2), alpha=False).save(OUT / f"{stem}.png")
+    print(f"Built {pdf}: 1 US Letter page, {sum(map(len, columns))} sizes.")
+    return pdf
+
+
+if __name__ == "__main__":
+    sheets = [
+        build_sheet("fraction-size-order", "SAE SOCKET SIZES", [SIZES[:17], SIZES[17:27], SIZES[27:]]),
+        build_sheet(
+            "metric-socket-reference",
+            "METRIC SOCKET SIZES",
+            [METRIC_SIZES[:17], METRIC_SIZES[17:25], METRIC_SIZES[25:]],
+            metric_sheet=True,
+        ),
+    ]
+    with pymupdf.open() as combined:
+        for sheet in sheets:
+            with pymupdf.open(sheet) as doc:
+                combined.insert_pdf(doc)
+        combined.set_metadata({"title": "SAE and Metric Socket References"})
+        assert len(combined) == 2
+        combined.save(OUT / "socket-reference-sheets.pdf")
