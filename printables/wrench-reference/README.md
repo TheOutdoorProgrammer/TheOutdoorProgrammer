@@ -18,3 +18,20 @@ uv run --script build_reference.py
 ```
 
 The script declares its dependencies and checks that the result fits on one US Letter page.
+
+## Fractions in size order
+
+[Print the fraction chart](fraction-size-order.pdf) for a smallest-to-largest reference covering every 1/32 inch from 3/16 through 1 1/4.
+Each row shows the simplest form, equivalent fractions where applicable, and a proportional bar for comparing sizes.
+Shaded rows mark 1/8-inch steps.
+Read down the left column, then down the right.
+
+[View the fraction chart preview](fraction-size-order.png).
+Use the same US Letter, portrait, 100% print settings as the wrench chart.
+The bars compare relative sizes rather than serving as a ruler.
+
+To regenerate this chart:
+
+```sh
+uv run --script build_fraction_reference.py
+```
