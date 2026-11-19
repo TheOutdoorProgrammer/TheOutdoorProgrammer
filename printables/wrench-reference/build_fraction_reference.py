@@ -2,7 +2,7 @@
 # requires-python = ">=3.11"
 # dependencies = ["reportlab>=4,<5", "pymupdf>=1.24,<2"]
 # ///
-"""Generate a printable fraction ordering chart and its PNG preview."""
+"""Generate a printable SAE wrench size chart and its PNG preview."""
 
 from fractions import Fraction
 from pathlib import Path
@@ -44,48 +44,41 @@ def equivalents(value):
 
 
 C = canvas.Canvas(str(PDF), pagesize=(WIDTH, HEIGHT), pageCompression=1)
-C.setTitle("Fractions in Size Order | Shop Reference")
+C.setTitle("SAE Wrench Sizes | Shop Reference")
 C.setSubject("Every 1/32 inch from 3/16 to 1 1/4, with equivalent fractions")
 C.setFillColor(INK)
 C.setFont("Helvetica-Bold", 8.5)
 C.drawString(30, HEIGHT - 32, "SHOP REFERENCE  /  ALL SIZES IN INCHES")
 C.setFont("Helvetica-Bold", 26)
-C.drawString(30, HEIGHT - 62, "FRACTIONS, IN SIZE ORDER")
-C.setFont("Helvetica", 10.5)
-C.drawString(30, HEIGHT - 81, "Read down the left column, then down the right. Bars show relative size.")
-C.drawString(30, HEIGHT - 97, "Bold = simplest form. Small text = equivalent fractions. Shading marks 1/8-inch steps.")
+C.drawString(30, HEIGHT - 62, "SAE WRENCH SIZES")
 
 
 def column(x, title, sizes):
     C.setFillColor(INK)
     C.setFont("Helvetica-Bold", 10.5)
-    C.drawString(x, HEIGHT - 121, title)
+    C.drawString(x, HEIGHT - 95, title)
     C.setStrokeColor(INK)
     C.setLineWidth(1)
-    C.line(x, HEIGHT - 129, x + 266, HEIGHT - 129)
-    row_height = 34.5
+    C.line(x, HEIGHT - 103, x + 266, HEIGHT - 103)
+    row_height = 36
     for index, size in enumerate(sizes):
-        top = 138 + index * row_height
+        top = 111 + index * row_height
         if (size * 8).denominator == 1:
             C.setFillColor(SHADE)
             C.rect(x, HEIGHT - top - row_height, 266, row_height, stroke=0, fill=1)
         C.setFillColor(INK)
-        C.setFont("Helvetica-Bold", 21)
-        C.drawString(x + 10, HEIGHT - top - 20, mixed(size))
-        C.setFillColor(RULE)
-        C.rect(x + 141, HEIGHT - top - 16, 110, 6, stroke=0, fill=1)
-        C.setFillColor(INK)
-        C.rect(x + 141, HEIGHT - top - 16, 110 * float(size / SIZES[-1]), 6, stroke=0, fill=1)
+        C.setFont("Helvetica-Bold", 22)
+        C.drawString(x + 10, HEIGHT - top - 21, mixed(size))
         C.setFillColor(MUTED)
-        C.setFont("Helvetica", 9)
-        C.drawString(x + 10, HEIGHT - top - 31, " = ".join(equivalents(size)))
+        C.setFont("Helvetica", 10)
+        C.drawString(x + 10, HEIGHT - top - 33, " = ".join(equivalents(size)))
         C.setStrokeColor(RULE)
         C.setLineWidth(0.4)
         C.line(x, HEIGHT - top - row_height, x + 266, HEIGHT - top - row_height)
 
 
-column(30, '01  /  START HERE: 3/16" TO 23/32"', SIZES[:18])
-column(316, '02  /  CONTINUE: 3/4" TO 1 1/4"', SIZES[18:])
+column(30, '3/16" TO 23/32"', SIZES[:18])
+column(316, '3/4" TO 1 1/4"', SIZES[18:])
 C.showPage()
 C.save()
 
