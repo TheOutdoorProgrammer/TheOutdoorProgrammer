@@ -42,16 +42,16 @@ resource "github_introduction" "joey" {
 
 <table><tr>
 <td width="33%" valign="top" align="center">
+As an athiest, I wish more than anything to be wrong. But as someone living right now. Why do kids get cancer? That god just doesnt feel very almighty to me when I see tiktoks of 9 year old children dying. Its not fair.<br/><br/>
+<sub><a href="https://bsky.app/profile/theoutdoorprogrammer.com/post/3n2zddwxyr22k">2026-11-23</a></sub>
+</td>
+<td width="33%" valign="top" align="center">
 I didnt know how much I needed Daniel Radcliff and Megan The Stallion but its amazing.<br/><br/>
 <sub><a href="https://bsky.app/profile/theoutdoorprogrammer.com/post/3n2ejevabvk2s">2026-11-15</a></sub>
 </td>
 <td width="33%" valign="top" align="center">
 Cows in the fields. Oops.<br/><br/>
 <sub><a href="https://bsky.app/profile/theoutdoorprogrammer.com/post/3mx3gu46exk2o">2026-10-04</a></sub>
-</td>
-<td width="33%" valign="top" align="center">
-GUYS! Im in a podcast! Its awesome! Watch our first episode if you are interested in nerd stuff! This first episode is about #openpolicyagent #opa #rego and we talk about how not-hard it is! Spotify: open.spotify.com/show/0dNIjle... Youtube: www.youtube.com/playlist?lis...<br/><br/>
-<sub><a href="https://bsky.app/profile/theoutdoorprogrammer.com/post/3mv6kmjx43s2i">2026-09-10</a></sub>
 </td>
 </tr></table>
 
@@ -82,9 +82,4 @@ GUYS! Im in a podcast! Its awesome! Watch our first episode if you are intereste
 
 | | Name | Description |
 |:-:|------|-------------|
-| | [Embracing the MCP Suck: Taming the Wild West of AI Protocols](https://www.theoutdoorprogrammer.com/2026/04/24/mcp-suck) | Spacelift.io's Joey Stout joins Mike Vizard to discuss the explosive growth of the Model Context Protocol (MCP), the severe lack of security guardrails, and why developers must embrace the suck. |
-| | [Why Is It Harder to Hit the Sun Than Leave the Solar System?](https://www.theoutdoorprogrammer.com/2026/04/11/hitting-the-sun) | Built an interactive orbital sim to answer this, and the answer is weirder than I expected. |
-| | [How I Pick Models for My Specialized AI Agents](https://www.theoutdoorprogrammer.com/2026/04/07/llm-benchmark-dashboard) | I built specialized agents for specific tasks - then figured out which models actually work for each one. Here's the framework I use. |
-| | [Redesigning My GitHub Profile README with Bash, YAML, and Way Too Many APIs](https://www.theoutdoorprogrammer.com/2026/03/08/redesigning-my-github-profile-readme) | I rebuilt my GitHub profile README from scratch with auto-generated badges, live BlueSky posts, and a Dracula color scheme, all from a single shell script. |
-| | [First Time Ice Fishing on Buckeye Lake with My Boys](https://www.theoutdoorprogrammer.com/2026/02/15/first-time-ice-fishing-buckeye-lake) | I took my two boys ice fishing for the first time on Buckeye Lake in Ohio. We didn't catch a thing — but we learned a lot and we're already planning the next trip. |
 
